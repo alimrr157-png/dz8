@@ -1,0 +1,54 @@
+/* Базовые стили для светлой темы (по умолчанию) */
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для тёмной темы (класс добавляется через JS к body) */
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-theme .container {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .btn {
+    background-color: #bb86fc;
+    color: #000000;
+}
+
+body.dark-theme .btn:hover {
+    background-color: #9954e6;
+}
